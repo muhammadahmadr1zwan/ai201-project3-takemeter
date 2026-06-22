@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets
+.env
+*.key
+takemeter-model/
+takemeter_executed.ipynb
+*.ipynb_checkpoints/
+
+# Large model artifacts (keep outputs/evaluation_results.json and confusion_matrix.png)
+outputs/checkpoints/
+outputs/model/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Colab downloads (commit evaluation_results.json and confusion_matrix.png intentionally)
+# outputs/ is tracked — add specific ignores if needed

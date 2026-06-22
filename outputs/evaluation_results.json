@@ -1,0 +1,164 @@
+{
+  "baseline_accuracy": 0.4242,
+  "finetuned_accuracy": 0.5152,
+  "improvement": 0.0909,
+  "test_set_size": 33,
+  "label_map": {
+    "analysis": 0,
+    "hot_take": 1,
+    "reaction": 2
+  },
+  "model": "distilbert-base-uncased",
+  "finetuned_detailed": {
+    "accuracy": 0.5151515151515151,
+    "report": {
+      "analysis": {
+        "precision": 0.5,
+        "recall": 0.4,
+        "f1-score": 0.4444444444444444,
+        "support": 10.0
+      },
+      "hot_take": {
+        "precision": 0.52,
+        "recall": 0.8666666666666667,
+        "f1-score": 0.65,
+        "support": 15.0
+      },
+      "reaction": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 8.0
+      },
+      "accuracy": 0.5151515151515151,
+      "macro avg": {
+        "precision": 0.34,
+        "recall": 0.4222222222222222,
+        "f1-score": 0.36481481481481487,
+        "support": 33.0
+      },
+      "weighted avg": {
+        "precision": 0.3878787878787879,
+        "recall": 0.5151515151515151,
+        "f1-score": 0.43013468013468015,
+        "support": 33.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        4,
+        6,
+        0
+      ],
+      [
+        2,
+        13,
+        0
+      ],
+      [
+        2,
+        6,
+        0
+      ]
+    ],
+    "labels": [
+      "analysis",
+      "hot_take",
+      "reaction"
+    ],
+    "samples": [
+      {
+        "text": "Bill Simmons and Ryen Russilo discuss a Giannis for Evan Mobley straight up trade and agree it's fair and both teams would agree",
+        "true": "hot_take",
+        "predicted": "hot_take",
+        "confidence": 0.3417269289493561
+      },
+      {
+        "text": "With the Nuggets loss, the NBA will officially have 7 different champions in 7 years. It is the first time in NBA history where 7 different teams have",
+        "true": "analysis",
+        "predicted": "analysis",
+        "confidence": 0.36041584610939026
+      },
+      {
+        "text": "Should the Nuggets trade Murray for Giannis ?. I think a Giannis and Jokic paring is brilliant. It would be like when the Spurs had Robinson and Dunca",
+        "true": "hot_take",
+        "predicted": "hot_take",
+        "confidence": 0.3547295331954956
+      },
+      {
+        "text": "SGA and Jdub finish the series with more assists indivudally and less turnovers combined than Jokic. SGA: 46 assists and 14 turnovers. Jdub: 42 assist",
+        "true": "hot_take",
+        "predicted": "analysis",
+        "confidence": 0.34590983390808105
+      },
+      {
+        "text": "Is it generally agreed that Jokic passes too much?. Jokic's turnovers through the playoffs are well known and used to slander him. However there could",
+        "true": "hot_take",
+        "predicted": "hot_take",
+        "confidence": 0.36090725660324097
+      }
+    ],
+    "wrong_predictions": [
+      {
+        "text": "SGA and Jdub finish the series with more assists indivudally and less turnovers combined than Jokic. SGA: 46 assists and 14 turnovers. Jdub: 42 assists and 10 turnovers. Jokic: 41 assists and 30 turnovers.",
+        "true": "hot_take",
+        "predicted": "analysis",
+        "confidence": 0.34590983390808105
+      },
+      {
+        "text": "NBA has to get their shit straight with what upgrades to Flagrant. Variation in refereeing on a game by game basis is fine. But when it comes to reviews, there is no room for error, and consistency is required. Part of the reason why there isn\u2019t consistency is because the rules are pretty cloudy. It needs to get straightened out. For the OKC DEN series, in G6 Jdub elbowed Murray in the head, it was reviewed and determined to be a common foul. Today in G7 AG elbowed SGA in the head, and it was upgraded to Flagrant. Very similar plays, the defender\u2019s both entered the other guys space and got hit on pull throughs. I don\u2019t have a problem with it being a flagrant or not, but these two plays can\u2019t result in different calls following a review. It has to go one way or the other. Links below",
+        "true": "reaction",
+        "predicted": "hot_take",
+        "confidence": 0.35602936148643494
+      },
+      {
+        "text": "Kobe, AI, Pierce, Allen or SGA, Brunson, Luka, ANT",
+        "true": "reaction",
+        "predicted": "hot_take",
+        "confidence": 0.3488846719264984
+      },
+      {
+        "text": "/r/NBA thread from when the Wolves and Knicks trade went down, both teams are heading to the conf finals",
+        "true": "hot_take",
+        "predicted": "analysis",
+        "confidence": 0.3471721112728119
+      },
+      {
+        "text": "LMAO this might be the best ever propsect to NBA player comp ever.",
+        "true": "reaction",
+        "predicted": "hot_take",
+        "confidence": 0.3555602431297302
+      },
+      {
+        "text": "[Bobby Marks] Christian Braun extension number will be at least $30M per year",
+        "true": "reaction",
+        "predicted": "hot_take",
+        "confidence": 0.3412192165851593
+      },
+      {
+        "text": "Best players in the Thunder-Nuggets series with ESPN's new \"net points\" stat: 1-SGA (+33.7), 2-Jokic (+32.0), 3-Chet (+10.6). Worst players? 1-Westbrook (-37.6), 2-MPJ (-22.0), 3-Murray (-16.7). Fun new stat from Dean Oliver, one of the pioneers of basketball analytics. He explains the methodology here:  Here's the source of the data:",
+        "true": "analysis",
+        "predicted": "hot_take",
+        "confidence": 0.35724616050720215
+      },
+      {
+        "text": "[SERIOUS NEXT DAY THREAD] Post-Game Discussion (May 18, 2025). Here is a place to have in depth, x's and o's, discussions on yesterday's games. Post-game discussions are linked in the table, keep your memes and reactions there. Please keep your discussion of a particular game in the respective comment thread. **All direct replies to this post will be removed.** |Away|Home|Score|GT|PGT| |:--|:--|:-:|:-:|:-:| |[](/DEN) Denver Nuggets |[](/OKC) Oklahoma City Thunder | 93 - 125 | [Link]( | [Link]( |",
+        "true": "analysis",
+        "predicted": "hot_take",
+        "confidence": 0.360901415348053
+      },
+      {
+        "text": "Nuggets Starters Dominant Playoff Run. Net Rating: +11 (2nd best lineup min 150min) ORTG: 119 DRTG: 108 282 minutes (most out of any playoff lineup out of necessity) So if they were so elite why did they end up in two 7 game series and ultimately losing? Well its because they basically got destroyed anytime that any healthy starter was out. Jokic off -24 Braun off -25 Gordon off -26 Murray off -54 (big reason why he led the league in playoff minutes per game and in total minutes they were getting obliterated when he was off) Every game it was the same script the starters start off well, the first subs come in and they start losing, the starters try to close the game while not gassing out. Today was a great example of this once again happening when the Nuggets were up 11 until Russell Westbrook checked in following Peyton Watson shortly after and the Thunder immediately cut it to 5. Hopefully this kills the Jokic superman +/- narrative since Jokic had a -24 net rating when he played without Jamal Murray. This is going to be the 2nd out of the last 3 playoff runs that Jokic is a negative when he plays without Murray.(-11 in 22/23) This doesn\u2019t mean that Jokic is dependent on Jamal but basketball is a team game and every player plays a part. The whole 1 player carrying concept has always been asinine. Jokic and Murray together without Gordon were a -19 so 2 players carrying isn\u2019t possible either. Depth matters and like we just saw for the Nuggets 5 players isn\u2019t enough to win a championship.",
+        "true": "analysis",
+        "predicted": "hot_take",
+        "confidence": 0.35108914971351624
+      },
+      {
+        "text": "Shai Gilgeous-Alexander since this moment: 31/5/6 on 56/37/82 on 66 TS% (4 games)",
+        "true": "reaction",
+        "predicted": "analysis",
+        "confidence": 0.35068756341934204
+      }
+    ]
+  }
+}

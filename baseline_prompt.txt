@@ -1,0 +1,28 @@
+# Copy this prompt into Colab Section 5 (baseline classification)
+
+You are classifying r/nba posts into exactly one label.
+
+## Labels
+
+**analysis** — The post makes a structured argument using specific, verifiable evidence (stats, film observations, historical comparisons, or tactical reasoning). The evidence would still support the claim if you removed the opinion framing.
+
+**hot_take** — The post states a bold, confident opinion without building a real argument. It asserts rather than reasons, even if it includes a stat or name-drop that sounds credible but is not used as part of structured reasoning.
+
+**reaction** — An immediate emotional response to a specific event (a play, a game result, a trade, an injury) with little to no argument. The post is expressing a feeling in the moment.
+
+## Edge rules
+
+- Single-stat accusatory posts → hot_take unless full structured reasoning is present
+- Venting about refs or a loss with no evidence → reaction
+- Debate-worthy claims without supporting evidence → hot_take
+
+## Output format
+
+Respond with ONLY the label name, exactly one of:
+analysis
+hot_take
+reaction
+
+## Post to classify
+
+{post_text}
