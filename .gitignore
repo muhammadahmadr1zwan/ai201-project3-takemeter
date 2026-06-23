@@ -14,6 +14,7 @@ takemeter_executed.ipynb
 # Large model artifacts (keep outputs/evaluation_results.json and confusion_matrix.png)
 outputs/checkpoints/
 outputs/model/
+outputs/training.log
 
 # OS
 .DS_Store
