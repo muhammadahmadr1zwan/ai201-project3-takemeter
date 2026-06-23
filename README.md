@@ -2,6 +2,8 @@
 
 Fine-tuned **DistilBERT** classifier that labels r/nba posts as `analysis`, `hot_take`, or `reaction`. Built for AI201 Project 3.
 
+**Demo video:** [22.06.2026_23.13.40_REC](https://screenrec.com/share/QU0GiLCE9c)
+
 **Community:** [r/nba](https://www.reddit.com/r/nba/) — high-volume NBA discussion where members routinely distinguish stat-backed breakdowns from bold unsupported claims and in-the-moment emotional posts. The labels map to distinctions the community already makes, not abstract "quality" scores.
 
 ---
@@ -189,7 +191,9 @@ Rows = true label, columns = predicted label.
 
 ## Demo Video
 
-Record a 3–5 min walkthrough using `DEMO_SCRIPT.md` and:
+**Recording:** [https://screenrec.com/share/QU0GiLCE9c](https://screenrec.com/share/QU0GiLCE9c)
+
+Walkthrough covers live classification with `scripts/demo.py`, one correct and one incorrect prediction, and the evaluation results below.
 
 ```powershell
 cd C:\Users\Ahmad\ai201-project3-takemeter
